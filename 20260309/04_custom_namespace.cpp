@@ -23,6 +23,9 @@ int main(){
     lee::print();
 
     using namespace hohwi;
+    // using namespace lee;
+    // -> 이렇게 하면 print() 호출 시 hohwi::print()와 lee::print()가 모두 후보가 되어 모호성 에러 발생
+
     print(); //hohwi::print()가 호출
 
     return 0;

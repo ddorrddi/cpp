@@ -17,6 +17,8 @@ int main()
 {
     Circle cir(5);
     cout << "Circle Radius : " << cir.getRadius() << "\n";
+    cir.setRadius(10);   // 반지름을 10으로 설정
+    cout << "Circle Radius : " << cir.getRadius() << "\n";
     cout << "Circle Area : " << cir.getArea() << "\n";
 
     return 0;

@@ -18,10 +18,8 @@ double Circle::getArea() {
 
 int main() 
 {
-    Circle donut;
-    donut.radius = 1;
-    // 객체 생성(메모리에 실체 생성)
-    // 멤버 변수 접근
+    Circle donut;   // 객체 생성
+    donut.radius = 1;   // 멤버 변수 접근
     cout << "donut area = " << donut.getArea() << "\n"; // 멤버 함수 호출
     Circle pizza;
     pizza.radius = 30;

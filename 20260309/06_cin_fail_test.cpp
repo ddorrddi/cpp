@@ -19,14 +19,14 @@ int main(){
         // 복구 없이 다시 읽기 시도
         std::cout << "[2] Try reading again WITHOUT recovery...." << std::endl;
         std::cin >> y;
-        if(std::cin.fail()){
+        if(std::cin.fail()){ // -> 여전히 실패 상태이므로 y 읽기도 실패
             std::cout << "STILL FAILED\n";
         }
     }
 
     // 정상 복구: 상태 + 복구 함께 정리
-    std::cin.clear();
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    std::cin.clear(); // 실패 상태 풀기
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // 버퍼의 잘못된 입력 버리기
     
     std::cout << "[3] After clear() + ignore().... \n";
     std::cout << "Enter an integer : ";

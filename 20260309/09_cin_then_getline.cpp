@@ -21,6 +21,8 @@ int main(){
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::cout << "Enter an intro : ";
     std::getline(std::cin, intro);      // 공백 포함 한 줄 입력
+    // cin.getline의 차이점 : cin.getline은 char 배열에서 사용
+    // getline은 string에서 사용
 
     std::cout << "AGE = " << age << "\n";
     std::cout << "INTRO : " << intro << "\n";

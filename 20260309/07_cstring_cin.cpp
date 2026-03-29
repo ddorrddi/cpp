@@ -10,8 +10,7 @@ int main(){
     char name[10];
 
     std::cout << "Name?? ";
-    std::cin >> name;
+    std::cin >> name; // 공백에서 입력이 끊김
     std::cout << "Your name is " << name << ".\n";
-
     return 0;
 }
