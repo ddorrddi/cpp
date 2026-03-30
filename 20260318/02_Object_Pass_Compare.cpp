@@ -26,7 +26,7 @@ void increaseByRef(Circle& c) {
 }
 
 // 객체 비교: 반지름이 같으면 true
-bool isSame(Circle& c1, Circle& c2) {
+bool isSame(Circle c1, Circle c2) {
     return c1.getRadius() == c2.getRadius();
 }
 

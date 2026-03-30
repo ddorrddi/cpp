@@ -26,7 +26,7 @@ namespace BasicSum{
 
 namespace RangeExample{
     // 매개변수 하나
-    int sum(int last){
+    int sum(int last){  
         int total = 0;
         for(int i = 0; i <= last; i++)
             total += i;

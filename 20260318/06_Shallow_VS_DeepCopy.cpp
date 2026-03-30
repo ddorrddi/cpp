@@ -26,7 +26,7 @@ public:
         if (strlen(n) > strlen(name)) return;  // 메모리 부족 방지
         strcpy(name, n);
     }
-    void show() { cout << "ID : " << id << ", Name : " << name << endl; }
+    void show() const { cout << "ID : " << id << ", Name : " << name << endl; }
 };
 
 class PersonDeep{

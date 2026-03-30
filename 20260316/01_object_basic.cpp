@@ -23,7 +23,7 @@ int main(){
     Circle *p = &donut;     //donut 주소 저장
     cout << "[obj] donut area : " << donut.getArea() << endl;  //donut 면적 출력
     cout << "[ptr] donut area : " << p->getArea() << endl;     //포인터로 donut 면적 출력
-    cout << "[ptr] donut area : " << (*p).getArea() << endl;     //포인터로 donut 면적 출력
+    cout << "[ptr] donut area : " << (*p).getArea() << endl;   //포인터로 donut 면적 출력
 
     p = &pizza;     //pizza 주소 저장
     cout << "[obj] pizza area : " << pizza.getArea() << endl;  //pizza 면적 출력

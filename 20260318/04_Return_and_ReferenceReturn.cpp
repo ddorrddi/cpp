@@ -11,10 +11,10 @@ class Circle{
 private:
     int radius;
 public:
-    Circle() : radius(1) { }
-    Circle(int r) : radius(r) { }
-    Circle(Circle& c) : radius( c.radius ) { }
-    ~Circle() { }
+    Circle() : radius(1) {}
+    Circle(int r) : radius(r) {}
+    Circle(Circle& c) : radius( c.radius ) {}
+    ~Circle() {}
 
     int getRadius() const { return radius; }
     void setRadius(int r) { radius = r; }
