@@ -19,8 +19,8 @@ namespace DefaultParamConflict{
 
 namespace CastAmbiguity{
     // value(3)에서는 int를 형변환 -> float/double로 모두 변환 가능 
-    float square(float value) { return value * value; }
     double square(double value) { return value * value; }
+    float square(float value) { return value * value; }
 }
 
 namespace ReferenceAmbiguity{

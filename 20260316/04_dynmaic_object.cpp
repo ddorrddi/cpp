@@ -44,7 +44,7 @@ int main(){
     cin >> n;
     
     if(n <= 0 ) return 0;
-    Circle *arr = new Circle[n];   //동적 객체 배열 생성
+    Circle* arr = new Circle[n];   //동적 객체 배열 생성
 
     for(int i=0; i<n; i++){
         int r;

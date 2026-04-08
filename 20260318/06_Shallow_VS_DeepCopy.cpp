@@ -16,7 +16,7 @@ class PersonShallow{
     char *name;
     int id;
 public:
-    PersonShallow(int id, const char *n) : id(id) {
+    PersonShallow(int id, const char* n) : id(id) {
         int len = strlen(n);
         name = new char[len + 1];
         strcpy(name, n);
@@ -54,7 +54,7 @@ public:
 int main(){
     // 얕은 복사: 같은 메모리 공유 → 이중 해제 문제 발생
     PersonShallow sf(1, "HOHWI");
-    PersonShallow sd(sf);
+    PersonShallow sd(sf);   // 기본 복사 생성자가 호출 -> 같은 메모리 공간을 공유
     sd.changeName("HO");
     sf.show();  // 영향 받음
     sd.show();

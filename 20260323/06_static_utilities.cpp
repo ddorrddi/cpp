@@ -39,7 +39,7 @@ public:
 
     // static 함수는 this가 없어서 non-static 멤버를 직접 읽을 수 없음
     // 필요한 객체를 인자로 받으면 그 객체의 값을 읽는 것은 가능
-    static int getMoney(const PersonError &person) { return person.money; }
+    static int getMoney(const PersonError person) { return person.money; }
 };
 
 int main()

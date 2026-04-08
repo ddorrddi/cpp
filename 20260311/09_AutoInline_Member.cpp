@@ -7,7 +7,7 @@ class Circle{
 private:
     int radius;
 public:
-    Circle(int r) : radius(r) {}
+    Circle(int r) : radius(r) {}    // 클래스 선언부 내부 구현 -> 자동 인라인 후보
     double getArea() const { return PI * radius * radius; }
 };
 

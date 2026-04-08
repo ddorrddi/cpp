@@ -18,9 +18,9 @@ int main(){
     std::cin >> age;
 
     // 버퍼에 남은 엔터 제거
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    // std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::cout << "Enter an intro : ";
-    std::getline(std::cin, intro);      // 공백 포함 한 줄 입력
+    std::getline(std::cin >> std::ws, intro);      // 공백 포함 한 줄 입력
     // cin.getline의 차이점 : cin.getline은 char 배열에서 사용
     // getline은 string에서 사용
 

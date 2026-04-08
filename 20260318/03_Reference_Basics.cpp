@@ -21,7 +21,7 @@ bool average(int a[], int size, int &avg){
 
 int main(){
     int n = 1;
-    int &ref = n;
+    int& ref = n;
     ref = 2;
     ref++;
     cout << "n = " << n << " / ref = " << ref << endl;

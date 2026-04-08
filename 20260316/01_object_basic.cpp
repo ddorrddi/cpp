@@ -20,7 +20,7 @@ int main(){
     Circle donut;
     Circle pizza(30);
 
-    Circle *p = &donut;     //donut 주소 저장
+    Circle* p = &donut;     //donut 주소 저장
     cout << "[obj] donut area : " << donut.getArea() << endl;  //donut 면적 출력
     cout << "[ptr] donut area : " << p->getArea() << endl;     //포인터로 donut 면적 출력
     cout << "[ptr] donut area : " << (*p).getArea() << endl;   //포인터로 donut 면적 출력
@@ -45,7 +45,7 @@ int main(){
         cout << "Circle " << i+1 << " area : " << arr[i].getArea() << endl;
     }
     cout << "--------Object Array + Pointer--------" << endl;
-    Circle *ap = arr;   //배열 이름은 배열의 첫 번째 요소의 주소를 가리킴
+    Circle* ap = arr;   // 배열 이름은 배열의 첫 번째 요소의 주소를 가리킴
     for(int i=0; i<3; i++){
         cout << "Circle " << i+1 << " area : " << ap->getArea() << endl;
         ap++;   //다음 요소로 이동

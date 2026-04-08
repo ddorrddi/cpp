@@ -8,6 +8,7 @@ public:
     int x;
 };
 
+// 이경우에는 매개변수 생성자가 있기 때문에 main에서 B b; 컴파일 에러
 class B{
 public:
     int x;
@@ -18,6 +19,7 @@ int main()
 {
     A a;
     cout << "A ok" << endl;
+    cout << a.x << endl;
 
     B b(10);
     cout << "B ok" << endl;

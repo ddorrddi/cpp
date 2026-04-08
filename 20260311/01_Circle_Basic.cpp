@@ -9,12 +9,12 @@ using namespace std;
 class Circle {
 public:
     int radius;
-    double getArea();
+    double getArea() { return 3.14 * radius * radius; }
 };
 
-double Circle::getArea() {
-    return 3.14 * radius * radius;
-}
+// double Circle::getArea() {
+//     return 3.14 * radius * radius;
+// }
 
 int main() 
 {

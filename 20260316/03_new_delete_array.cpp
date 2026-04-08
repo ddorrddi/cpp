@@ -16,7 +16,7 @@ int main(){
     cin >> n;
     if(n <= 0) return 0;
 
-    int *p = new int[n];   // 힙에 int n개 저장
+    int* p = new int[n];   // 힙에 int n개 저장
 
     for(int i=0; i<n; i++)
         cin >> p[i];   // 배열 요소에 입력
