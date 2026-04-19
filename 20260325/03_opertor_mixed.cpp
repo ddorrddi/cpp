@@ -21,7 +21,7 @@ public:
         return Power(kick + op2, punch + op2);
     }
 
-    // a + 2
+    // 2 + a
     friend Power operator+(int op1, const Power& op2);
 };
 

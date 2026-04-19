@@ -23,7 +23,7 @@ int main()
 
     name = sv.at(0);
 
-    for(int i = 0; i< sv.size(); i++)
+    for(int i = 0; i < sv.size(); i++)
         if(name < sv[i]) name = sv[i];
 
     cout << name << endl;

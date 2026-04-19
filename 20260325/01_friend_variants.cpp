@@ -54,5 +54,10 @@ int main(){
     cout << (equals(a, b) ? "equal\n" : "not equal\n");
     cout << (man.equals(a, c) ? "equal\n" : "not equal\n");
 
+    man.copy(c, a);
+    cout << "-------Copied--------" << endl;
+
+    cout << (man.equals(a, c) ? "equal\n" : "not equal\n");
+    
     return 0;
 }
